@@ -1,0 +1,8 @@
+bing chat: 4/7
+1. cortex man. con. *
+2.system logs from Google Kubernetes Engine *
+3. leads can become alerts. *
+4. fields/filter *
+5. background and foreground
+6. schedule/rerun query *
+7. json/csv *
