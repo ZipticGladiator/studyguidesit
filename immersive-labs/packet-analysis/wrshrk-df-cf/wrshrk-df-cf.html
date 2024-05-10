@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question and Answer Collection</title>
+    <link rel="stylesheet" href="exfil-over-alt-protocol.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Question and Answer Collection</h1>
+
+      <h2>Wireshark Display Filters: Combining Filters</h2>
+      <p>ip.src == 10.10.10.10 && tcp.port == 80. What does this line of code do?
+      </p>
+      <p>Filter capture to show all packets sent from 10.10.10.10 on port 80
+      </p>
+      <br />
+
+      <p>From the PCAP provided, apply a filter to display all packets on UDP dstport 59485 with
+        the destination IP 10.6.5.102. What is the transaction ID of this packet response? </p>
+      <p>0x0000d27b</p>
+      <br>
+
+      <p>From the PCAP provided, apply a filter to display all web traffic {http.request or ssl.handshake.type == 1}. What
+        percentage of results are then displayed in the capture?
+      </p>
+      <p>0.3%</p>
+      <br>
+
+      <p>Now take the filter used in the previous question, and add an OR expression which filters by (...tcp flags
+         equal to 0x0002) and a further expression which filters by packets NOT to/from (tcp port 25). What 
+         percentage of results are then displayed in the capture?
+      </p>
+      <p>0.8%</p>
+      <br>
+
+      <p>Now using the same filter, alter the tcp flags expression to include a OR dns. What percentage of the results
+        are then displayed in the capture?
+      </p>
+      <p>1.9%</p>
+      <br>
+ 
+    </div>
+  </body>
+</html>
